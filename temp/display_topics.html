@@ -1,0 +1,24 @@
+<title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_Topic</h1>
+        <table border="3px">
+            <tr>
+                
+                <th>topic_name</th>
+                
+                
+            </tr>
+        {% for wo in LTO %}
+            <tr>
+               <td> {{ wo.topic_name }} </td>
+                
+            </tr>
+        {% endfor %}
+    </center>
+    
+</body>
+</html>
+
+

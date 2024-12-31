@@ -1,0 +1,29 @@
+<title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>display_web</h1>
+        <table border="3px">
+            <tr>
+                <th>pk/id</th>
+                <th>topic_name</th>
+                <th>name</th>
+                <th>url</th>
+                <th>email</th>
+                
+                
+            </tr>
+        {% for wo in LWO %}
+            <tr>
+               <td> {{ wo.pk }} </td>
+               <td> {{ wo.topic_name }} </td>
+               <td> {{ wo.name }} </td>
+               <td> {{ wo.url }} </td>
+               <td> {{ wo.email }} </td>
+                
+            </tr>
+        {% endfor %}
+    </center>
+    
+</body>
+</html>
